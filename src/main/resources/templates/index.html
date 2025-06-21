@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoSafe</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>GeoSafe - Emergency Map</h1>
+<div id="alertsOverlay">
+    <h3>Alertas Recentes</h3>
+    <ul id="alertsList"></ul>
+</div>
+
+<div id="map"></div>
+
+<form id="alertForm">
+    <h2>Send Alert</h2>
+    <input type="text" id="message" placeholder="Message" required>
+    <select id="level">
+        <option value="info">Info</option>
+        <option value="urgent">Urgent</option>
+    </select>
+    <button type="submit">Send</button>
+</form>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
