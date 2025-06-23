@@ -1,6 +1,6 @@
 {
   "build": {
-    "command": "./gradlew clean build -x test -x check"
+    "command": "./gradlew bootJar"
   },
   "start": {
     "command": "java -jar build/libs/geosafe-0.0.1-SNAPSHOT.jar"
